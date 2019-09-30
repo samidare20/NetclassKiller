@@ -12,14 +12,17 @@ class MyApp(QWidget):
 
     def __init__(self):
         super().__init__()
-
+        self.layout=QBoxLayout()
         self.initUI()
 
     def initUI(self):
 
-        self.setWindowTitle('My First Application')
+        self.setWindowTitle('Netclass Killer')
         self.move(300, 300)
         self.resize(400, 200)
+        button=QPushButton("kill Netclass")
+        self.layout.AddContent(button)
+        self.setLayout(self.layout)
         self.show()
 
 
