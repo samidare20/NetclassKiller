@@ -22,13 +22,15 @@ namespace WpfApplication1
     {
         double orginalWidth, originalHeight;
         ScaleTransform scale = new ScaleTransform();
-        command cmd=new command();
+        command oscmd=new command();
         public MainWindow()
         {
         InitializeComponent();
         this.Loaded += new RoutedEventHandler(Window1_Loaded);
-        } 
-
+        }
+        /// <summary>
+        /// 사이즈 조정
+        /// </summary>
         void Window1_SizeChanged(object sender, SizeChangedEventArgs e)
         {
         ChangeSize(e.NewSize.Width, e.NewSize.Height);
@@ -51,7 +53,10 @@ namespace WpfApplication1
         rootElement.LayoutTransform = scale;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// kill netclass
+        /// </summary>
+        private void KillNetclass(object sender, RoutedEventArgs e)
         {
             string comm = "";
             string[] a=new string[] {"SvcNC80Cli.exe" ,"NC80Cli.exe","rncHost.exe","NC80Cap.exe","SvcNC80Cli.exe"};
@@ -59,11 +64,21 @@ namespace WpfApplication1
             {
                 comm = "taskkill /F /IM ";
                 comm += a[i];
-                cmd.go(comm);
+                oscmd.go(comm);
             }
             MessageBox.Show("Killing Netclass Complete!");
         }
-    
+
+
+        private void Korvpn(object sender, RoutedEventArgs e)
+        {
+            oscmd.go("powershell Add-VpnConnection -Name \"vpn\" -ServerAddress \"chika.kr\" -TunnelType L2tp -L2tpPsk railgun");
+            oscmd.go("y");
+            MessageBox.Show("complete");
+        }
+        /// <summary>
+        /// cmd
+        /// </summary>
         public class command
         {
             ProcessStartInfo cmd = new ProcessStartInfo();
@@ -71,7 +86,7 @@ namespace WpfApplication1
             public command()
             {
                 cmd.FileName=@"cmd";
-                cmd.WindowStyle=ProcessWindowStyle.Hidden;
+                //cmd.WindowStyle=ProcessWindowStyle.Hidden;
                 cmd.CreateNoWindow=true;
 
                 cmd.UseShellExecute=false;
@@ -86,8 +101,8 @@ namespace WpfApplication1
                 process.StartInfo=cmd;
                 process.Start();
                 process.StandardInput.Write(@com + Environment.NewLine);
+                //process.WaitForExit();
 
-                process.StandardInput.Close();
             }
         }
     }
