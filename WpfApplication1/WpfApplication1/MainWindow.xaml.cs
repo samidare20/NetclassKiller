@@ -53,8 +53,15 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            cmd.go("taskkill /F /IM Taskmgr.exe");
+            string comm = "";
+            string[] a=new string[] {"SvcNC80Cli.exe" ,"NC80Cli.exe","rncHost.exe","NC80Cap.exe","SvcNC80Cli.exe"};
+            for (int i = 0; i < a.Length; i++)
+            {
+                comm = "taskkill /F /IM ";
+                comm += a[i];
+                cmd.go(comm);
+            }
+            MessageBox.Show("Killing Netclass Complete!");
         }
     
         public class command
@@ -75,7 +82,6 @@ namespace WpfApplication1
             }
             public void go(string com)
             {
-                MessageBox.Show("check");
                 process.EnableRaisingEvents=false;
                 process.StartInfo=cmd;
                 process.Start();
