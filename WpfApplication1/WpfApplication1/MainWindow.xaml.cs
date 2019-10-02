@@ -64,7 +64,7 @@ namespace WpfApplication1
             {
                 comm = "taskkill /F /IM ";
                 comm += a[i];
-                oscmd.go(comm);
+                oscmd.go(comm );
             }
             MessageBox.Show("Killing Netclass Complete!");
         }
@@ -73,7 +73,7 @@ namespace WpfApplication1
         private void Korvpn(object sender, RoutedEventArgs e)
         {
             oscmd.go("powershell Add-VpnConnection -Name \"vpn\" -ServerAddress \"chika.kr\" -TunnelType L2tp -L2tpPsk railgun");
-            oscmd.go("y");
+            oscmd.go("y" );
             MessageBox.Show("complete");
         }
         /// <summary>
@@ -86,23 +86,20 @@ namespace WpfApplication1
             public command()
             {
                 cmd.FileName=@"cmd";
-                //cmd.WindowStyle=ProcessWindowStyle.Hidden;
-                cmd.CreateNoWindow=true;
-
+               // cmd.WindowStyle=ProcessWindowStyle.Hidden;
+                cmd.CreateNoWindow=false;
                 cmd.UseShellExecute=false;
                 cmd.RedirectStandardOutput=true;
                 cmd.RedirectStandardInput=true;
                 cmd.RedirectStandardError=true;
-                
             }
             public void go(string com)
             {
-                process.EnableRaisingEvents=false;
-                process.StartInfo=cmd;
+                process.StartInfo = cmd;
                 process.Start();
                 process.StandardInput.Write(@com + Environment.NewLine);
-                //process.WaitForExit();
-
+                process.WaitForExit();
+                //process.StandardInput.Close();
             }
         }
     }
