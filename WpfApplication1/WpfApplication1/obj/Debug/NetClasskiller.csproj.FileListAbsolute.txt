@@ -1,0 +1,13 @@
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetClasskiller.csprojResolveAssemblyReference.cache
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetClasskiller.csproj.GenerateResource.Cache
+D:\NetclassKiller\WpfApplication1\WpfApplication1\bin\Debug\NetclassKiller.exe.config
+D:\NetclassKiller\WpfApplication1\WpfApplication1\bin\Debug\NetclassKiller.exe
+D:\NetclassKiller\WpfApplication1\WpfApplication1\bin\Debug\NetclassKiller.pdb
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller_MarkupCompile.cache
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.g.resources
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.Properties.Resources.resources
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.exe
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.pdb

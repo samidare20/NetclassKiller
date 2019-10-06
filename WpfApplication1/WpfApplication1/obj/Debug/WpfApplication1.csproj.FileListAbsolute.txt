@@ -24,3 +24,6 @@ C:\Users\Sunrin\Desktop\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug
 C:\Users\Sunrin\Desktop\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\Users\Sunrin\Desktop\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
 C:\Users\Sunrin\Desktop\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+D:\NetclassKiller\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
