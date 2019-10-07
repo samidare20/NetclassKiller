@@ -8,6 +8,6 @@ class VPN
 {
     public void run(command cmd)
     {
-        cmd.go("dir");
+
     }
 }

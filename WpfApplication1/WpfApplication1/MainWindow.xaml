@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="NetclassKiller" Height="350" Width="525">
     <Grid>
-        <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="33,130,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="KillNetclass" FontSize="25"/>
-        <Button Content="국내 VPN" HorizontalAlignment="Left" Margin="287,130,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="VPN" FontSize="25"/>
+        <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="162,137,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="KillNetclass" FontSize="25"/>
     </Grid>
 </Window>
