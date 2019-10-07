@@ -37,7 +37,7 @@ using System.Diagnostics;
             process.Start();
             process.StandardInput.Write(@com + Environment.NewLine);
 
-            //process.StandardInput.Close();
+            process.StandardInput.Close();
         }
     }
 
