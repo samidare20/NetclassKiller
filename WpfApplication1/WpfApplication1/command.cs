@@ -22,7 +22,7 @@ using System.Diagnostics;
         {
             cmd.FileName = @"cmd";
             cmd.WindowStyle = ProcessWindowStyle.Hidden;
-            cmd.CreateNoWindow = false;
+            cmd.CreateNoWindow = true;
 
             cmd.UseShellExecute = false;
             cmd.RedirectStandardOutput = true;

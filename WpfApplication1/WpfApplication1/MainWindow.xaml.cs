@@ -29,11 +29,6 @@ namespace WpfApplication1
             this.Loaded += new RoutedEventHandler(Window1_Loaded);
         } 
 
-        private void VPN(object sender,RoutedEventArgs e)
-        {
-            VPN vpn = new VPN();
-            vpn.run(cmd);
-        }
 
         private void KillNetclass(object sender, RoutedEventArgs e)
         {
