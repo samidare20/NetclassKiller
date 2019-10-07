@@ -53,42 +53,9 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string comm = "";
-            string[] a=new string[] {"SvcNC80Cli.exe" ,"NC80Cli.exe","rncHost.exe","NC80Cap.exe","SvcNC80Cli.exe"};
-            for (int i = 0; i < a.Length; i++)
-            {
-                comm = "taskkill /F /IM ";
-                comm += a[i];
-                cmd.go(comm);
-            }
-            MessageBox.Show("Killing Netclass Complete!");
+            KillNetclass a = new KillNetclass();
+            a.test(cmd);
         }
     
-        public class command
-        {
-            ProcessStartInfo cmd = new ProcessStartInfo();
-            Process process = new Process();
-            public command()
-            {
-                cmd.FileName=@"cmd";
-                cmd.WindowStyle=ProcessWindowStyle.Hidden;
-                cmd.CreateNoWindow=true;
-
-                cmd.UseShellExecute=false;
-                cmd.RedirectStandardOutput=true;
-                cmd.RedirectStandardInput=true;
-                cmd.RedirectStandardError=true;
-                
-            }
-            public void go(string com)
-            {
-                process.EnableRaisingEvents=false;
-                process.StartInfo=cmd;
-                process.Start();
-                process.StandardInput.Write(@com + Environment.NewLine);
-
-                process.StandardInput.Close();
-            }
-        }
     }
 }
