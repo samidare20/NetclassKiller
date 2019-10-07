@@ -29,6 +29,16 @@ namespace WpfApplication1
             this.Loaded += new RoutedEventHandler(Window1_Loaded);
         } 
 
+
+        private void KillNetclass(object sender, RoutedEventArgs e)
+        {
+            KillNetclass a = new KillNetclass();
+            a.test(cmd);
+        }
+
+        /// <summary>
+        /// 창 크기 변환에 맞춰 클래스 조정
+        /// </summary>
         void Window1_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             ChangeSize(e.NewSize.Width, e.NewSize.Height);
@@ -49,13 +59,6 @@ namespace WpfApplication1
             scale.ScaleY = height / originalHeight;
             FrameworkElement rootElement = this.Content as FrameworkElement;
             rootElement.LayoutTransform = scale;
-        }
-
-
-        private void KillNetclass(object sender, RoutedEventArgs e)
-        {
-            KillNetclass a = new KillNetclass();
-            a.test(cmd);
         }
     
     }
