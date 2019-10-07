@@ -29,20 +29,21 @@ namespace WpfApplication1
             this.Loaded += new RoutedEventHandler(Window1_Loaded);
         } 
 
+        private void VPN(object sender,RoutedEventArgs e)
+        {
+            VPN vpn = new VPN();
+            vpn.run(cmd);
+        }
 
         private void KillNetclass(object sender, RoutedEventArgs e)
         {
             KillNetclass a = new KillNetclass();
-            a.test(cmd);
+            a.run(cmd);
         }
 
         /// <summary>
         /// 창 크기 변환에 맞춰 클래스 조정
         /// </summary>
-        void Window1_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            ChangeSize(e.NewSize.Width, e.NewSize.Height);
-        }
 
         void Window1_Loaded(object sender, RoutedEventArgs e)
         {
@@ -51,6 +52,11 @@ namespace WpfApplication1
             if (this.WindowState == WindowState.Maximized)
                 ChangeSize(this.ActualWidth, this.ActualHeight);
             this.SizeChanged += new SizeChangedEventHandler(Window1_SizeChanged);
+        }
+
+        void Window1_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            ChangeSize(e.NewSize.Width, e.NewSize.Height);
         }
 
         private void ChangeSize(double width, double height)

@@ -22,7 +22,7 @@ using System.Diagnostics;
         {
             cmd.FileName = @"cmd";
             cmd.WindowStyle = ProcessWindowStyle.Hidden;
-            cmd.CreateNoWindow = true;
+            cmd.CreateNoWindow = false;
 
             cmd.UseShellExecute = false;
             cmd.RedirectStandardOutput = true;
@@ -37,7 +37,7 @@ using System.Diagnostics;
             process.Start();
             process.StandardInput.Write(@com + Environment.NewLine);
 
-            process.StandardInput.Close();
+            //process.StandardInput.Close();
         }
     }
 

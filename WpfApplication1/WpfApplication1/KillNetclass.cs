@@ -14,9 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 
-partial class KillNetclass
+partial class KillNetclass 
 {
-    public void test(command cmd)
+    public void run(command cmd)
     {
             string comm = "";
             string[] a=new string[] {"SvcNC80Cli.exe" ,"NC80Cli.exe","rncHost.exe","NC80Cap.exe","SvcNC80Cli.exe"};
