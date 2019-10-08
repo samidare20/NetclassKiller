@@ -39,7 +39,7 @@ namespace WpfApplication1
         private void VPN(object sender,RoutedEventArgs e)
         {
             VPN vpn = new VPN();
-            vpn.run(cmd);
+            vpn.run(cmd,ProcessBox);
         }
 
         /// <summary>
