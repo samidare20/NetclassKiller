@@ -17,5 +17,6 @@ class VPN
         processbox.Text += "\nTrying login VPN...";
         cmd.go("powershell rasdial chika.kr sunrin1 tsuki");
         processbox.Text += "\nConnecting VPN complete!";
+        MessageBox.Show("Connecting VPN complete!");
     }
 }
