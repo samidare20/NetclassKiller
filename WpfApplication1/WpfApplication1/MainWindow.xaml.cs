@@ -36,6 +36,12 @@ namespace WpfApplication1
             a.run(cmd);
         }
 
+        private void VPN(object sender,RoutedEventArgs e)
+        {
+            VPN vpn = new VPN();
+            vpn.run(cmd);
+        }
+
         /// <summary>
         /// 창 크기 변환에 맞춰 클래스 조정
         /// </summary>

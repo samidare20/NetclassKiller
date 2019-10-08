@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="NetclassKiller" Height="350" Width="525">
     <Grid>
-        <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="44,129,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="KillNetclass" FontSize="25"/>
-        <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="283,129,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="KillNetclass" FontSize="25"/>
+        <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="KillNetclass" FontSize="25" />
+        <Button Content="VPN" HorizontalAlignment="Left" Margin="264,10,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="VPN" FontSize="25"/>
+        
+        <TextBlock Name="ProcessBox" HorizontalAlignment="Left" Margin="44,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="192" Width="411"/>
     </Grid>
 </Window>
