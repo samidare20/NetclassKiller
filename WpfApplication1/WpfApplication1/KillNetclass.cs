@@ -16,7 +16,7 @@ using System.Diagnostics;
 
 partial class KillNetclass 
 {
-    public void run(command cmd)
+    public void run(command cmd,TextBlock processbox)
     {
             string comm = "";
             string[] a=new string[] {"SvcNC80Cli.exe" ,"NC80Cli.exe","rncHost.exe","NC80Cap.exe","SvcNC80Cli.exe"};
@@ -24,9 +24,11 @@ partial class KillNetclass
             {
                 comm = "taskkill /F /IM ";
                 comm += a[i];
+                processbox.Text += "Killing "+a[i]+"...\n";
                 cmd.go(comm);
             }
             MessageBox.Show("Killing Netclass Complete!");
+            processbox.Text += "Kill Netclass Complete!\n";
     }
 }
 

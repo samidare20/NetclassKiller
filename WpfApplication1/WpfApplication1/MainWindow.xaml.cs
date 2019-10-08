@@ -33,13 +33,13 @@ namespace WpfApplication1
         private void KillNetclass(object sender, RoutedEventArgs e)
         {
             KillNetclass a = new KillNetclass();
-            a.run(cmd);
+            a.run(cmd,ProcessBox);
         }
 
         private void VPN(object sender,RoutedEventArgs e)
         {
             VPN vpn = new VPN();
-            vpn.run(cmd);
+            vpn.run(cmd,ProcessBox);
         }
 
         /// <summary>
