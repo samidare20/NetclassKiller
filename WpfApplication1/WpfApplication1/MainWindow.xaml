@@ -4,8 +4,7 @@
         Title="NetclassKiller" Height="350" Width="525">
     <Grid>
         <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="KillNetclass" FontSize="25" />
-        <Button Content="VPN" HorizontalAlignment="Left" Margin="264,10,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="VPN" FontSize="25"/>
-        <Border BorderThickness="1" BorderBrush="Black"/>
+        <Button Content="VPN" HorizontalAlignment="Left" Margin="264,10,0,0" VerticalAlignment="Top" Width="191" Height="56" Click="VPN" FontSize="25"/>        
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="207" Margin="44,81,0,0" Stroke="Black" VerticalAlignment="Top" Width="411"/>
         
         
