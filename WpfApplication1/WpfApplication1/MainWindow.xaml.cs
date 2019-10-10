@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Threading;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -39,7 +40,8 @@ namespace WpfApplication1
         private void VPN(object sender,RoutedEventArgs e)
         {
             VPN vpn = new VPN();
-            vpn.run(cmd,ProcessBox);
+            vpn.run(cmd, ProcessBox);
+            
         }
 
         /// <summary>
