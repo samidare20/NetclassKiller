@@ -36,8 +36,8 @@ using System.Diagnostics;
             process.StartInfo = cmd;
             process.Start();
             process.StandardInput.Write(@com + Environment.NewLine);
-            //process.WaitForExit();
             process.StandardInput.Close();
+        process.StandardOutput.ReadToEnd();
         }
     }
 
