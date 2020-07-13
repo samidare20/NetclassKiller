@@ -69,6 +69,12 @@ namespace WpfApplication1
             FrameworkElement rootElement = this.Content as FrameworkElement;
             rootElement.LayoutTransform = scale;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:\\Program Files\\NetClassClient8\\NC80Cli.exe", "/c dir");
+
+        }
     
     }
 }

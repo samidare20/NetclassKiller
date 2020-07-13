@@ -10,5 +10,4 @@ D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.pdb
 D:\NetclassKiller\NetclassKiller.exe.config
 D:\NetclassKiller\NetclassKiller.exe
 D:\NetclassKiller\NetclassKiller.pdb
-D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.csprojAssemblyReference.cache
-D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.csproj.CoreCompileInputs.cache
+D:\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\NetclassKiller.csprojResolveAssemblyReference.cache
