@@ -4,12 +4,12 @@
         Title="NetclassKiller" Height="369" Width="525">
     <Grid Margin="0,0,-8,0">
         <Button Content="Kill Netclass" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top" Width="140" Height="67" Click="KillNetclass" FontSize="25" />
-        <Button Content="VPN" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top" Width="140" Height="67" Click="VPN" FontSize="25"/>
+        <Button Content="VPN" HorizontalAlignment="Left" Margin="189,10,0,0" VerticalAlignment="Top" Width="140" Height="67" Click="VPN" FontSize="25"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="213" Margin="33,91,0,0" Stroke="Black" VerticalAlignment="Top" Width="450"/>
 
 
         <TextBlock ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible"  Name="ProcessBox" Text="" HorizontalAlignment="Left" Margin="55,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="188" Width="391"/>
-        <Button Content="Restore&#xD;&#xA;Netclass" HorizontalAlignment="Left" Margin="188,10,0,0" VerticalAlignment="Top" Width="140" Height="67"  FontSize="25" Click="Button_Click"/>
+        <Button Content="Restore&#xD;&#xA;Netclass" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top" Width="140" Height="67"  FontSize="25" Click="Button_Click"/>
 
     </Grid>
 </Window>
