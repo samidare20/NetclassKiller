@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\1\NetclassKiller\WpfApplication1\WpfApplication1\obj\Debug\
+D:\1\NetclassKiller\WpfApplication1\WpfApplication1\obj\Release\
 NetclassKiller
 none
 false
-DEBUG;TRACE
+TRACE
 D:\1\NetclassKiller\WpfApplication1\WpfApplication1\App.xaml
 11151548125
 
